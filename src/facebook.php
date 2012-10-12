@@ -1,6 +1,6 @@
 <?php
 
-class Facebook extends OAuth2\Client\IDP {
+class Facebook extends Oauth2\Client\IDP {
 
 	public $scope = array('email', 'read_stream');
 
