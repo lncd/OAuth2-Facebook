@@ -1,0 +1,37 @@
+{
+	"name": "lncd/Oauth2-facebook",
+	"description": "OAuth 2.0 Client for Facebook",
+	"version": "0.1",
+	"homepage": "https://github.com/lncd/OAuth2-Facebook",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.3.0",
+		"lncd/Oauth2": "*"
+	},
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/lncd/OAuth2"
+		}
+	],
+	"keywords": [
+		"oauth",
+		"oauth2",
+		"client",
+		"facebook",
+		"fb"
+	],
+	"authors": [
+		{
+			"name": "Alex Bilbie",
+			"email": "oauth2@alexbilbie.com",
+			"homepage": "http://www.httpster.org",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"Oauth2-facebook": "src/"
+		}
+	}
+}
