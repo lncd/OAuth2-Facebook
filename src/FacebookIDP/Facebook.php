@@ -6,7 +6,7 @@ class Facebook extends \Oauth2\Client\IDP {
 	public $scope = array('email', 'read_stream');
 	public $responseType = 'string';
 
-	function urlAuthorize()
+	public function urlAuthorize()
 	{
 		return 'https://www.facebook.com/dialog/oauth';
 	}
