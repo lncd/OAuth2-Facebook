@@ -11,7 +11,7 @@ class Facebook extends \Oauth2\Client\IDP {
 		return 'https://www.facebook.com/dialog/oauth';
 	}
 
-	function urlAccessToken()
+	public function urlAccessToken()
 	{
 		return 'https://graph.facebook.com/oauth/access_token';
 	}
