@@ -25,7 +25,7 @@ class Facebook extends \Oauth2\Client\IDP {
 
 	public function userDetails($response, \Oauth2\Client\Token\Access $token)
 	{
-		return array(
+		$details = array(
 			'uid' => $response->id,
 			'nickname' => isset($response->username) ? $response->username : null,
 			'name' => $response->name,
@@ -34,10 +34,17 @@ class Facebook extends \Oauth2\Client\IDP {
 			'email' => isset($response->email) ? $response->email : null,
 			'location' => isset($response->hometown->name) ? $response->hometown->name : null,
 			'description' => isset($response->bio) ? $response->bio : null,
-			'image' => 'https://graph.facebook.com/me/picture?type=normal&access_token='.$token,
 			'urls' => array(
 			  'Facebook' => $response->link,
 			),
+			'image'	=>	null
 		);
+
+		if ($headers = get_headers('https://graph.facebook.com/me/picture?type=normal&access_token='.$token, 1))
+		{
+			$details['image'] = $headers['Location'];
+		}
+
+		return $details;
 	}
 }
