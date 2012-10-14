@@ -1,7 +1,7 @@
 <?php
 namespace FacebookIDP;
 
-class Facebook extends Oauth2\Client\IDP {
+class Facebook extends \Oauth2\Client\IDP {
 
 	public $scope = array('email', 'read_stream');
 
