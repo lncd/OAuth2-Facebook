@@ -1,7 +1,7 @@
 {
 	"name": "lncd/oauth2-facebook",
 	"description": "OAuth 2.0 Client for Facebook",
-	"version": "0.1.1",
+	"version": "1.0",
 	"homepage": "https://github.com/lncd/OAuth2-Facebook",
 	"license": "MIT",
 	"require": {
@@ -24,7 +24,7 @@
 	"authors": [
 		{
 			"name": "Alex Bilbie",
-			"email": "oauth2@alexbilbie.com",
+			"email": "hello@alexbilbie.com",
 			"homepage": "http://www.httpster.org",
 			"role": "Developer"
 		}
