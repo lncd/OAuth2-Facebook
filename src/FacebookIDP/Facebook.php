@@ -16,14 +16,14 @@ class Facebook extends \Oauth2\Client\IDP {
 		return 'https://graph.facebook.com/oauth/access_token';
 	}
 
-	public function urlUserInfo(Oauth2\Client\Token\Access $token)
+	public function urlUserDetails(\Oauth2\Client\Token\Access $token)
 	{
 		return 'https://graph.facebook.com/me?'.http_build_query(array(
 			'access_token' => $token,
 		));
 	}
 
-	public function userInfo($response, Oauth2\Client\Token\Access $token)
+	public function userDetails($response, \Oauth2\Client\Token\Access $token)
 	{
 		return array(
 			'uid' => $response->id,
