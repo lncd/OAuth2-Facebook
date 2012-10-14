@@ -1,4 +1,5 @@
 <?php
+namespace FacebookIDP;
 
 class Facebook extends Oauth2\Client\IDP {
 
