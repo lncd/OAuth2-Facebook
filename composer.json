@@ -1,7 +1,7 @@
 {
 	"name": "lncd/oauth2-facebook",
 	"description": "OAuth 2.0 Client for Facebook",
-	"version": "1.0",
+	"version": "1.0.1",
 	"homepage": "https://github.com/lncd/OAuth2-Facebook",
 	"license": "MIT",
 	"require": {
