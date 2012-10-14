@@ -19,7 +19,7 @@ class Facebook extends \Oauth2\Client\IDP {
 	public function urlUserDetails(\Oauth2\Client\Token\Access $token)
 	{
 		return 'https://graph.facebook.com/me?'.http_build_query(array(
-			'access_token' => $token,
+			'access_token' => (string) $token,
 		));
 	}
 
