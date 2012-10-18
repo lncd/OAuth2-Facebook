@@ -12,9 +12,8 @@
  * @copyright  (c) 2012 University of Lincoln
  * @license    http://opensource.org/licenses/mit-license.php
  */
-namespace FacebookIDP;
 
-class Facebook extends \Oauth2\Client\IDP {
+class FacebookIDP extends \Oauth2\Client\IDP {
 
     public $scope = array('email', 'read_stream');
     public $responseType = 'string';
