@@ -1,7 +1,7 @@
 {
 	"name": "lncd/oauth2-facebook",
 	"description": "OAuth 2.0 Client for Facebook",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"homepage": "https://github.com/lncd/OAuth2-Facebook",
 	"license": "MIT",
 	"require": {
@@ -11,7 +11,7 @@
 	"repositories": [
 		{
 			"type": "git",
-			"url": "https://github.com/lncd/OAuth2"
+			"url": "https://github.com/lncd/OAuth2-Facebook"
 		}
 	],
 	"keywords": [
@@ -30,8 +30,6 @@
 		}
 	],
 	"autoload": {
-		"psr-0": {
-			"FacebookIDP": "src/"
-		}
+		"classmap": ["FacebookIDP.php"]
 	}
 }
